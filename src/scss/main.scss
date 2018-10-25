@@ -1,6 +1,30 @@
-@import 'colors';
+// vendor CSS
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~animate.css/animate.min.css';
 
-div {
-  color: $primary-cta;
-  background-image: url('../img/12343.png');
+// app CSS
+@import 'navbar';
+
+body {
+  font-size: $default-font-size;
+  color: $default-text-color;
+  padding: 0;
+}
+
+.secondary-cta {
+  background-color: $secondary-cta;
+  border-radius: $cta-radius;
+  color: $purple-text-color;
+  font-size: $cta-font-size;
+  text-align: right;
+}
+
+.buy-icon {
+  background-image: url('../img/buy-icon.png');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: inline-block;
+  height: 25px;
+  vertical-align: middle;
+  width: 25px;
 }

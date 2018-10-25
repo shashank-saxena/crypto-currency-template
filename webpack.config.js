@@ -1,6 +1,7 @@
 // webpack v4
 
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -38,7 +39,7 @@ module.exports = {
         use: [{
           loader: 'url-loader',
           options: {
-            limit: 8000, // Convert images < 8kb to base64 strings
+            limit: 1000, // Convert images < 8kb to base64 strings
             name: '[path][name].[ext]'
           }
         }]
@@ -62,6 +63,12 @@ module.exports = {
       template: './index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+    })
   ]
 };

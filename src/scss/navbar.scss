@@ -1,0 +1,23 @@
+@import 'common';
+
+.navbar-default {
+  background-color: $navbar-bg;
+  border-color: $navbar-bg;
+  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.08);
+
+  .navbar-nav {
+
+    li > a {
+      color: $default-text-color;
+      margin: 10px 0;
+    }
+
+    .secondary-cta {
+      color: $purple-text-color;
+      padding: 10px 20px;
+    }
+  }
+}
+
+
+

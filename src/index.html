@@ -1,19 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- JS -->
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div>Hello, 123<div>
+	<title>BitCarbon</title>
 
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-  </body>
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+
+	<!-- JS -->
+
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+          <img src="${require('./img/bitcarbon-logo.png')}"></img>
+        </a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="navbar-form navbar-left">Diamond Standard co.</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign up</a></li>
+          <li><a href="#">Login</a></li>
+					<li>
+            <a href="#" class="btn secondary-cta" role="button"><span class="buy-icon"></span> Buy Bitcarbon</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
 </html>

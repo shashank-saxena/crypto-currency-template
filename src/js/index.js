@@ -1,3 +1,7 @@
+// vendor JS
+import 'bootstrap';
+
+// app CSS
 import '../scss/main.scss';
 
-console.log("hello, world");
+// app JS
