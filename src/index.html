@@ -38,17 +38,33 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<div class="navbar-form navbar-left">Diamond Standard co.</div>
+				<div class="navbar-tag-text navbar-left">Diamond Standard co.</div>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Sign up</a></li>
           <li><a href="#">Login</a></li>
 					<li>
-            <a href="#" class="btn secondary-cta" role="button"><span class="buy-icon"></span> Buy Bitcarbon</a>
+            <a href="#" class="btn secondary-cta" role="button"><span class="buy-icon purple"></span> Buy Bitcarbon</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
+
+  <section class="home-section">
+    <div class="primary-heading-block">
+      <img src="${require('./img/diamond-bg.png')}"></img>
+      <div class="primary-text">
+        <h1>Finally, The first diamond commodity</h1>
+        <div class="mb-20"><a href="#" class="btn primary-cta" role="button"><span class="buy-icon white"></span>Buy Bitcarbon</a></div>
+        <div class="sub-text">Already have an account? <a href="#">Login</a></div>
+      </div>
+    </div>
+    <div class="arrow-div"></div>
+  </section>
+
+  <section class="bitcarbon-info">
+  </section>
+
 	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 

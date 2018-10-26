@@ -3,18 +3,31 @@
 .navbar-default {
   background-color: $navbar-bg;
   border-color: $navbar-bg;
-  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 29px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+
+  .navbar-brand {
+    height: auto;
+    padding: 30px 40px 30px 70px;
+
+    img {
+      width: 145px;
+    }
+  }
+
+  .navbar-tag-text {
+    margin-top: 33px;
+  }
 
   .navbar-nav {
 
     li > a {
       color: $default-text-color;
-      margin: 10px 0;
+      margin: 20px 0;
     }
 
     .secondary-cta {
-      color: $purple-text-color;
-      padding: 10px 20px;
+      margin-right: 55px;
     }
   }
 }

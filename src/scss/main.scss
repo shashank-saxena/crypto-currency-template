@@ -4,27 +4,118 @@
 
 // app CSS
 @import 'navbar';
+@import 'helpers';
 
 body {
-  font-size: $default-font-size;
   color: $default-text-color;
+  font-size: $default-font-size;
   padding: 0;
-}
 
-.secondary-cta {
-  background-color: $secondary-cta;
-  border-radius: $cta-radius;
-  color: $purple-text-color;
-  font-size: $cta-font-size;
-  text-align: right;
+  a {
+    color: $purple-text-color;
+  }
+
+  a.btn {
+    border-radius: $cta-radius;
+    font-size: $cta-font-size;
+    padding: 10px 30px;
+
+    &.primary-cta {
+      background-color: $purple-text-color;
+      color: $white;
+    }
+
+    &.secondary-cta {
+      background-color: $secondary-cta;
+      color: $purple-text-color;
+    }
+  }
+
+
 }
 
 .buy-icon {
-  background-image: url('../img/buy-icon.png');
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 18px;
   display: inline-block;
-  height: 25px;
+  height: 20px;
+  margin-right: 5px;
   vertical-align: middle;
-  width: 25px;
+  width: 20px;
+
+  &.white {
+    background-image: url('../img/buy-icon-white.svg');
+  }
+
+  &.purple {
+    background-image: url('../img/buy-icon-purple.svg');
+  }
+}
+
+.home-section {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 800px;
+
+  .primary-heading-block {
+    padding: 80px 0;
+    position: relative;
+
+    img {
+      max-width: 575px;
+    }
+
+    .primary-text {
+      left: 190px;
+      max-width: 260px;
+      position: absolute;
+      top: 230px;
+    }
+
+    h1 {
+      color: $dark-grey;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .sub-text {
+      color: $black;
+    }
+  }
+}
+
+.bitcarbon-info {
+  background-color: $white;
+}
+
+.arrow-div {
+  position: relative;
+  background: #fff;
+  border: 5px solid #fff;
+}
+.arrow-div:after, .arrow-div:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-div:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 20px;
+  margin-left: -20px;
+}
+.arrow-div:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 27px;
+  margin-left: -27px;
 }
